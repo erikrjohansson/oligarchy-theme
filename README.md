@@ -6,6 +6,8 @@ your free operating system.
 
 ![Oligarchy](preview.png)
 
+![preview-2](/home/je93/Work/omarchy-oligarchy-theme/preview-2.png)
+
 ## Install
 
 ```bash
