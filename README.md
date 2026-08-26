@@ -6,12 +6,12 @@ your free operating system.
 
 ![Oligarchy](preview.png)
 
-![preview-2](/home/je93/Work/omarchy-oligarchy-theme/preview-2.png)
+![Oligarchy wallpapers](preview-2.png)
 
 ## Install
 
 ```bash
-omarchy theme install https://github.com/ejuro/omarchy-oligarchy-theme.git
+omarchy theme install https://github.com/ejuro/oligarchy-theme.git
 ```
 
 That clones the repo into `~/.config/omarchy/themes/oligarchy` and applies it.
