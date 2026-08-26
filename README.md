@@ -41,15 +41,23 @@ omarchy theme remove oligarchy
 
 ## Backgrounds
 
-| File | |
-|---|---|
-| `1-oligarchy-factory.jpg` | "THE OLIGARCHY — your free operating system, brought to you by unreasonable amounts of money" |
-| `2-zero-dollars-several-billionaires.jpg` | "ZERO DOLLARS, SEVERAL BILLIONAIRES" |
-| `3-unreasonable-amounts-of-money.jpg` | "POWERED BY UNREASONABLE AMOUNTS OF MONEY" |
+All three are 2912×1632. Click one for the full-size image.
 
-All three are 2912×1632. To add your own without touching this repo, drop images
-into `~/.config/omarchy/backgrounds/oligarchy/` — Omarchy picks them up alongside
-the bundled ones and they survive `omarchy theme update`.
+[![THE OLIGARCHY — your free operating system, brought to you by unreasonable amounts of money](previews/1-oligarchy-factory.jpg)](backgrounds/1-oligarchy-factory.jpg)
+
+`1-oligarchy-factory.jpg`
+
+[![ZERO DOLLARS, SEVERAL BILLIONAIRES](previews/2-zero-dollars-several-billionaires.jpg)](backgrounds/2-zero-dollars-several-billionaires.jpg)
+
+`2-zero-dollars-several-billionaires.jpg`
+
+[![POWERED BY UNREASONABLE AMOUNTS OF MONEY](previews/3-unreasonable-amounts-of-money.jpg)](backgrounds/3-unreasonable-amounts-of-money.jpg)
+
+`3-unreasonable-amounts-of-money.jpg`
+
+To add your own without touching this repo, drop images into
+`~/.config/omarchy/backgrounds/oligarchy/` — Omarchy picks them up alongside the
+bundled ones and they survive `omarchy theme update`.
 
 ## Palette
 
