@@ -46,6 +46,7 @@ omarchy theme remove oligarchy
 | `1-oligarchy-factory.jpg` | "THE OLIGARCHY — your free operating system, brought to you by unreasonable amounts of money" |
 | `2-zero-dollars-several-billionaires.jpg` | "ZERO DOLLARS, SEVERAL BILLIONAIRES" |
 | `3-unreasonable-amounts-of-money.jpg` | "POWERED BY UNREASONABLE AMOUNTS OF MONEY" |
+| '4-DHH-Nazis-Rounding-Up-Gypsies.jpg' | "WHEN GYPSIES TAKE OVER PUBLIC SPACES" |
 
 All three are 2912×1632. To add your own without touching this repo, drop images
 into `~/.config/omarchy/backgrounds/oligarchy/` — Omarchy picks them up alongside
