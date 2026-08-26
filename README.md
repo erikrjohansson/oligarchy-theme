@@ -39,6 +39,28 @@ Updates every git-installed theme, this one included.
 omarchy theme remove oligarchy
 ```
 
+## GTK apps
+
+Omarchy themes GTK apps by switching them to Adwaita-dark and setting an icon
+theme — it does not pass the palette along, so Nautilus and other GTK windows
+stay default grey no matter which theme is active. This theme ships a `gtk.css`
+that repaints them in the Oligarchy palette. Point GTK at the current theme's
+copy once:
+
+```bash
+mkdir -p ~/.config/gtk-3.0 ~/.config/gtk-4.0
+ln -sfn ~/.local/state/omarchy/current/theme/gtk.css ~/.config/gtk-3.0/gtk.css
+ln -sfn ~/.local/state/omarchy/current/theme/gtk.css ~/.config/gtk-4.0/gtk.css
+```
+
+Restart the apps to pick it up — GTK reads this file at startup, so `nautilus -q`
+and reopening is enough for Files. Qt apps follow too, since Omarchy points them
+at the GTK platform theme.
+
+The symlinks track whichever theme is applied, so they keep working after
+`omarchy theme set`. Switch to a theme that ships no `gtk.css` and they simply
+dangle: GTK falls back to plain Adwaita-dark, which is what you had before.
+
 ## Backgrounds
 
 All three are 2912×1632. Click one for the full-size image.
