@@ -91,7 +91,7 @@ bundled ones and they survive `omarchy theme update`.
 | lighter background | `#4b5d4d` |
 | foreground | `#F7E2B1` |
 | accent | `#5a9059` |
-| selection | `#F7E2B1` |
+| selection | `#4c744c` |
 | muted | `#5e5f59` |
 
 | | normal | bright |
