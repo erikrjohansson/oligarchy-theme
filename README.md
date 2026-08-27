@@ -63,7 +63,8 @@ dangle: GTK falls back to plain Adwaita-dark, which is what you had before.
 
 ## Backgrounds
 
-All three are 2912×1632. Click one for the full-size image.
+The three posters are 2912×1632; the wordmark is 3840×2160. Click one for the
+full-size image.
 
 [![THE OLIGARCHY — your free operating system, brought to you by unreasonable amounts of money](previews/1-oligarchy-factory.jpg)](backgrounds/1-oligarchy-factory.jpg)
 
@@ -76,6 +77,11 @@ All three are 2912×1632. Click one for the full-size image.
 [![POWERED BY UNREASONABLE AMOUNTS OF MONEY](previews/3-unreasonable-amounts-of-money.jpg)](backgrounds/3-unreasonable-amounts-of-money.jpg)
 
 `3-unreasonable-amounts-of-money.jpg`
+
+[![OLIGARCHY wordmark](previews/oligarchy.jpg)](backgrounds/oligarchy.png)
+
+`oligarchy.png` — the plain wordmark, in the style of the stock Omarchy
+background. Sorts last, so `omarchy theme bg next` reaches it after the posters.
 
 To add your own without touching this repo, drop images into
 `~/.config/omarchy/backgrounds/oligarchy/` — Omarchy picks them up alongside the
