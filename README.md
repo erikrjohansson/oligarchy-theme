@@ -11,7 +11,7 @@ your free operating system.
 ## Install
 
 ```bash
-omarchy theme install https://github.com/ejuro/oligarchy-theme.git
+omarchy theme install https://github.com/erikrjohansson/oligarchy-theme.git
 ```
 
 That clones the repo into `~/.config/omarchy/themes/oligarchy` and applies it.
