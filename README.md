@@ -1,12 +1,10 @@
 # Oligarchy
 
-An [Omarchy](https://omarchy.org/) theme. Muted olive-green backgrounds, pale gold
-foreground, green accent — with retro-poster wallpapers about who actually pays for
+An [Omarchy](https://omarchy.org/) theme. Dark poster-green windows, cream text and a
+rust accent, all taken from the retro-poster wallpapers about who actually pays for
 your free operating system.
 
-![Oligarchy](preview.png)
-
-![Oligarchy wallpapers](preview-2.png)
+![Oligarchy: cliamp and btop on the Unreasonable Amounts of Money poster](preview.png)
 
 ## Install
 
@@ -22,7 +20,7 @@ To switch to it later, or after installing something else:
 omarchy theme set oligarchy
 ```
 
-Cycle through the three wallpapers with `omarchy theme bg next`, or open the
+Cycle through the wallpapers with `omarchy theme bg next`, or open the
 picker with `omarchy theme bg-switcher`.
 
 ## Update
@@ -39,49 +37,18 @@ Updates every git-installed theme, this one included.
 omarchy theme remove oligarchy
 ```
 
-## GTK apps
-
-Omarchy themes GTK apps by switching them to Adwaita-dark and setting an icon
-theme — it does not pass the palette along, so Nautilus and other GTK windows
-stay default grey no matter which theme is active. This theme ships a `gtk.css`
-that repaints them in the Oligarchy palette. Point GTK at the current theme's
-copy once:
-
-```bash
-mkdir -p ~/.config/gtk-3.0 ~/.config/gtk-4.0
-ln -sfn ~/.local/state/omarchy/current/theme/gtk.css ~/.config/gtk-3.0/gtk.css
-ln -sfn ~/.local/state/omarchy/current/theme/gtk.css ~/.config/gtk-4.0/gtk.css
-```
-
-Restart the apps to pick it up — GTK reads this file at startup, so `nautilus -q`
-and reopening is enough for Files. Qt apps follow too, since Omarchy points them
-at the GTK platform theme.
-
-The symlinks track whichever theme is applied, so they keep working after
-`omarchy theme set`. Switch to a theme that ships no `gtk.css` and they simply
-dangle: GTK falls back to plain Adwaita-dark, which is what you had before.
-
 ## Backgrounds
 
-The three posters are 2912×1632; the wordmark is 3840×2160. Click one for the
-full-size image.
+Both wallpapers are 3840×2160. Click one for the full-size image.
 
-[![THE OLIGARCHY — your free operating system, brought to you by unreasonable amounts of money](previews/1-oligarchy-factory.jpg)](backgrounds/1-oligarchy-factory.jpg)
+[![POWERED BY UNREASONABLE AMOUNTS OF MONEY](previews/1-unreasonable-amounts-of-money.jpg)](backgrounds/1-unreasonable-amounts-of-money.jpg)
 
-`1-oligarchy-factory.jpg`
-
-[![ZERO DOLLARS, SEVERAL BILLIONAIRES](previews/2-zero-dollars-several-billionaires.jpg)](backgrounds/2-zero-dollars-several-billionaires.jpg)
-
-`2-zero-dollars-several-billionaires.jpg`
-
-[![POWERED BY UNREASONABLE AMOUNTS OF MONEY](previews/3-unreasonable-amounts-of-money.jpg)](backgrounds/3-unreasonable-amounts-of-money.jpg)
-
-`3-unreasonable-amounts-of-money.jpg`
+`1-unreasonable-amounts-of-money.jpg`
 
 [![OLIGARCHY wordmark](previews/oligarchy.jpg)](backgrounds/oligarchy.png)
 
 `oligarchy.png` — the plain wordmark, in the style of the stock Omarchy
-background. Sorts last, so `omarchy theme bg next` reaches it after the posters.
+background. Sorts last, so `omarchy theme bg next` reaches it after the poster.
 
 To add your own without touching this repo, drop images into
 `~/.config/omarchy/backgrounds/oligarchy/` — Omarchy picks them up alongside the
@@ -91,27 +58,27 @@ bundled ones and they survive `omarchy theme update`.
 
 | | |
 |---|---|
-| background | `#374b39` |
-| dark background | `#29382b` |
-| darker background | `#1c261d` |
-| lighter background | `#4b5d4d` |
-| foreground | `#F7E2B1` |
-| accent | `#5a9059` |
-| selection | `#4c744c` |
-| muted | `#5e5f59` |
+| background | `#1e2c1e` |
+| dark background | `#172217` |
+| darker background | `#111a11` |
+| lighter background | `#2a3b2a` |
+| foreground | `#f7e2b1` |
+| accent | `#e7885d` |
+| selection | `#5a4831` |
+| muted | `#899786` |
 
 | | normal | bright |
 |---|---|---|
-| red | `#b09153` | `#cda555` |
-| yellow | `#fff78c` | `#fff76c` |
-| green | `#c5ca74` | `#dde26f` |
-| cyan | `#c4ea82` | `#d6ff80` |
-| blue | `#5a9059` | `#65a865` |
-| magenta | `#de9d54` | `#ffae4b` |
-| orange | `#bca26d` | |
-| brown | `#716141` | |
+| red | `#d67d5e` | `#de9673` |
+| yellow | `#e6ca91` | `#ead099` |
+| green | `#9cc49c` | `#b3cca1` |
+| cyan | `#90bfbb` | `#aac8b9` |
+| blue | `#88aec1` | `#a4bbbd` |
+| magenta | `#c2989a` | `#e7885d` |
+| orange | `#e09865` | |
+| brown | `#7b5438` | |
 
-Icons: `Yaru-yellow`.
+Icons: `Yaru` (orange folders, to match the rust).
 
 ## License
 

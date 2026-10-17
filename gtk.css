@@ -8,17 +8,17 @@
  * See the README for how to hook this up. */
 
 /* Palette */
-@define-color background         #374b39;
-@define-color dark_background    #29382b;
-@define-color darker_background  #1c261d;
-@define-color lighter_background #4b5d4d;
+@define-color background         #1e2c1e;
+@define-color dark_background    #172217;
+@define-color darker_background  #111a11;
+@define-color lighter_background #2a3b2a;
 @define-color foreground         #F7E2B1;
-@define-color dark_foreground    #b9aa85;
-@define-color accent             #5a9059;
-@define-color accent_light       #c5ca74;
-@define-color pale_yellow        #fff78c;
-@define-color error_red          #af4001;
-@define-color error_red_light    #f47f50;
+@define-color dark_foreground    #b6ab85;
+@define-color accent             #e7885d;
+@define-color accent_light       #eda87a;
+@define-color pale_yellow        #e6ca91;
+@define-color error_red          #b5452c;
+@define-color error_red_light    #f08f7c;
 
 /* Window chrome */
 @define-color window_bg_color @dark_background;
@@ -64,7 +64,7 @@
 @define-color overview_bg_color @darker_background;
 @define-color overview_fg_color @foreground;
 
-/* Accent: green fills, lighter green for text and links */
+/* Accent: rust fills, lighter rust for text and links */
 @define-color accent_bg_color @accent;
 @define-color accent_fg_color @darker_background;
 @define-color accent_color @accent_light;
@@ -96,8 +96,8 @@
 @define-color theme_fg_color @foreground;
 @define-color theme_base_color @darker_background;
 @define-color theme_text_color @foreground;
-@define-color theme_selected_bg_color @accent;
-@define-color theme_selected_fg_color @darker_background;
+@define-color theme_selected_bg_color #564630;
+@define-color theme_selected_fg_color @foreground;
 @define-color insensitive_bg_color @dark_background;
 @define-color insensitive_fg_color @dark_foreground;
 @define-color insensitive_base_color @darker_background;
@@ -106,11 +106,19 @@
 @define-color theme_unfocused_fg_color @foreground;
 @define-color theme_unfocused_base_color @darker_background;
 @define-color theme_unfocused_text_color @foreground;
-@define-color theme_unfocused_selected_bg_color @accent;
-@define-color theme_unfocused_selected_fg_color @darker_background;
+@define-color theme_unfocused_selected_bg_color #423d29;
+@define-color theme_unfocused_selected_fg_color @foreground;
 @define-color content_view_bg @darker_background;
 @define-color text_view_bg @darker_background;
 @define-color tooltip_bg_color @darker_background;
 @define-color tooltip_fg_color @foreground;
 @define-color link_color @accent_light;
 @define-color visited_link_color @dark_foreground;
+
+/* Selected files and list rows: a tint of the accent with normal text, so a
+ * selection doesn't outweigh the files themselves. */
+row:selected, .view:selected, gridview > child:selected,
+columnview > listview > row:selected, iconview:selected, treeview.view:selected {
+  background-color: #564630;
+  color: @foreground;
+}
